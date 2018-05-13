@@ -21,11 +21,11 @@ public class ConfluenceUser implements UserDetails{
 	 String password;
 	 
 	 @JsonCreator
-	  void User(@JsonProperty("id") String id,
+	  void ConfluenceUser(@JsonProperty("id") String id,
 	       @JsonProperty("username") String username,
 	       @JsonProperty("shortname") String shortname,
 	       @JsonProperty("password") String password) {
-	    super();
+	    //super();
 	    this.id = requireNonNull(id);
 	    this.username = requireNonNull(username);
 	    this.shortname = requireNonNull(shortname);
